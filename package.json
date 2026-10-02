@@ -1,0 +1,27 @@
+{
+  "name": "reels-recommender",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm --workspace apps/api run dev",
+    "dev:worker": "npm --workspace apps/worker run dev",
+    "build:api": "npm --workspace apps/api run build",
+    "build:worker": "npm --workspace apps/worker run build",
+    "lint": "npm --workspace apps/api run lint && npm --workspace apps/worker run lint",
+    "db:setup": "npm --workspace apps/api run db:setup",
+    "db:generate": "npm --workspace apps/api run db:generate",
+    "db:push": "npm --workspace apps/api run db:push",
+    "db:studio": "npm --workspace apps/api run db:studio",
+    "hashtags:backfill": "npm --workspace apps/api run hashtags:backfill"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^9.5.1"
+  }
+}
