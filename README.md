@@ -1,6 +1,6 @@
 # Reels Recommender
 
-A production-shaped short-video platform inspired by TikTok/Reels.
+A reel platform inspired by TikTok/Reels.
 
 This repo is intentionally structured around the hard parts of a reel system:
 
